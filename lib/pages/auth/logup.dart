@@ -27,7 +27,10 @@ bool _isPassMatch = false;
 AuthServices _authServices = AuthServices();
 
 class SignupPage extends StatefulWidget {
-  const SignupPage({Key? key}) : super(key: key);
+
+ // const SignupPage({Key? key}) : super(key: key);
+  final formGlobalKey = GlobalKey < FormState > ();
+
 
   @override
   _SignupPageState createState() => _SignupPageState();
@@ -241,13 +244,7 @@ class _SignupPageState extends State<SignupPage> {
                               ),
                             ),
                             onPressed: () async {
-                              EndUser newUser = EndUser(
-                                  uid: 'uid',
-                                  fullname: _fullnameCtrl.text.trim(),
-                                  phone: _phoneCtrl.text.trim(),
-                                  email: _emailCtrl.text.trim(),
-                                  about: _aboutCtrl.text.trim(),
-                               );
+
 
                               if (_fullnameCtrl.text.trim().isNotEmpty &&
                                   _emailCtrl.text.trim().isNotEmpty &&
@@ -255,13 +252,9 @@ class _SignupPageState extends State<SignupPage> {
                                   _passCtrl.text.trim().isNotEmpty &&
                                   _aboutCtrl.text.trim().isNotEmpty &&
                                   _passCtrl.text == _confirmPassCtrl.text) {
-                                dynamic creds = await _authServices.registerUser(
-                                    newUser, _passCtrl.text.trim());
-                                if (creds == null) {
-                                  const snackbar = SnackBar(
-                                      content: Text("Email/Password invalid!"));
-                                  ScaffoldMessenger.of(context)
-                                      .showSnackBar(snackbar);
+
+                                if () {
+
                                 } else {
                                   Navigator.pushReplacement(
                                       context,
