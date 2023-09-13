@@ -1,4 +1,14 @@
-# Levroi
+<div id="top"></div>
+<h1 align="center"> Levroi 📱 </h1>
+* C'est une application visant à simplifier l'organisation des restaurants et des
+services de livraison.
+* optimiser les opérations liées à la restauration et à la livraison, en facilitant la gestion
+des commandes, des menus et des livraisons.
+* Technologies utilisées : Flutter, Firebase, Adobe XD
+
+<br/>
+<h1 align="center"> Screenshot </h1>
+<br/>
 
 <p align=center>
     <div align="center">
